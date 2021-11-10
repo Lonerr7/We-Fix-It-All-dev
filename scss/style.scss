@@ -1,0 +1,142 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+// === header ===
+
+.header {
+    background-color: #F2FCFE;
+
+    &__inner {
+        // display: flex;
+        // align-items: center;
+        min-height: 100px;
+        padding: 0 26px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    &__buttons {
+        padding-left: 50px;
+    }
+
+    &__btn {
+        color: inherit;
+        margin-right: 17px;
+        
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__btn--border {
+        border: 2px solid $black;
+        padding: 22px 26px 22px 28px;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+
+    &__body {
+        width: 639px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__list-item {
+        position: relative;
+        margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__list-link {
+        color: inherit;
+    }
+
+
+    &__list-item--sublist {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    &__sublist {
+        position: absolute;
+        top: 100%;
+        right: -53px;
+        background-color: #fff;
+        padding: 41px 26px 29px 31px !important;
+        width: 220px;
+        border-radius: 10px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: all .4s ease 0s;
+        transform: translateY(30px);
+    }
+
+    &__sublist-item {
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    &__sublist-link {
+        color: inherit;
+    }
+
+    &__burger-icon {
+        display: none;
+    }
+
+    &__arrow {
+        // display: block;
+        margin-left: 5px;
+        cursor: pointer;
+        transition: transform .3s;
+    }
+}
+
+body._pc .menu__list > li:hover .menu__sublist {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+body._touch .menu__list > li.menu__list-item--active .menu__sublist {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+body._touch .menu__list > li.menu__list-item--active .menu__arrow {
+    transform: rotate(-180deg);
+}
+
+// === /header ===
+
+
+@import 'media';
