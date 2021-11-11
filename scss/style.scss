@@ -82,6 +82,7 @@
 
     &__sublist {
         position: absolute;
+        z-index: 10;
         top: 100%;
         right: -53px;
         background-color: #fff;
@@ -150,5 +151,70 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
 
 // === /header ===
 
+
+// === hero ===
+
+.hero {
+    padding-bottom: 50px;
+    
+    &__inner {
+        position: relative;
+    }
+
+    &__box {
+        display: flex;
+    }
+
+    &__item--pink {
+        width: 500px;
+        height: 700px;
+        background-color: rgba(241, 178, 158, 0.55);
+    }
+
+    &__info {
+        position: absolute;
+        top: 64px;
+        left: 60px;
+        width: 665px;
+        background-color: #fff;
+        padding: 60px 75px 35px 50px;
+    }
+
+    &__title {
+        font-size: 80px;
+        line-height: 94px;
+        font-weight: 700;
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        font-size: 23px;
+        line-height: 27px;
+        max-width: 540px;
+        margin-bottom: 40px;
+    }
+
+    &__btn {
+        font-weight: 500;
+        line-height: 26px;
+        display: inline-block;
+    }
+
+    &__btn-black {
+        padding: 22px 44px;
+        background-color: $black;
+        color: #fff;
+        margin-right: 13px;
+    }
+
+    &__btn-white {
+        color: $black;
+        background-color: #fff;
+        padding: 20px 52px;
+        border: 2px solid $black;
+    }
+}
+
+// === /hero ===
 
 @import 'media';
