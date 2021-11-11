@@ -61,4 +61,5 @@ showSubMenu(mobileMenuArrows, 'mobile-menu__list-item--active');
 
 burgerIcon.addEventListener('click', () => {
     mobileMenu.classList.toggle('_visible');
+    body.classList.toggle('lock');
 });

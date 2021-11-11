@@ -24,22 +24,32 @@ a:hover {
 }
 
 .mobile-menu {
-    min-height: 100vh;
+    z-index: 4;
+    height: 100vh;
     position: absolute;
     top: 0;
-    left: -500px;
+    left: -1000px;
     transform: translateX(-50%);
     text-align: center; 
-    padding: 76px 0;
-    background-color: #fff;
+    padding: 76px 15px;
+    background-color: #F2FCFE;
     width: 100%;
-    overflow: auto;
     transition: left .4s;
+    overflow-y: auto;
+
+    &__list-item {
+        margin-bottom: 25px;
+    }
+
+    &__list-link {
+        color: $black;
+        font-weight: 500;
+    }
 
     &__list-item--sublist {
         position: relative;
         display: flex;
-        margin: 0 auto;
+        margin: 0 auto 25px auto;
         align-items: center;
         justify-content: center;
     }
@@ -58,9 +68,43 @@ a:hover {
         transform: translateY(30px);
     }
 
+    &__sublist-item {
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__sublist-link {
+        color: $black;
+    }
+
     &__arrow {
         transition: all .3s;
         margin: 0 0 0 5px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    &__btn {
+        margin-right: 17px;
+        color: $black;
+        font-weight: 500;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__btn--border {
+        border: 2px solid $black;
+        padding: 12px 15px;
     }
 }
 

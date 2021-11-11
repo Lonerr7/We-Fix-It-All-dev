@@ -37,6 +37,10 @@
         // bottom: 0;
     }
 
+    .header__menu {
+        padding: 0;
+    }
+
     .menu__burger-icon {
         display: block;
         z-index: 5;
@@ -46,6 +50,7 @@
         cursor: pointer;
         justify-self: flex-end;
         margin-left: auto;
+        margin-top: 36px;
 
         span, &::before, &::after {
             position: absolute;
@@ -73,6 +78,14 @@
             transform: translateY(-50%);
         }
     }
+}
 
-    
+@media (max-width: 370px) {
+    .mobile-menu__btn {
+        font-size: 20px;
+    }
+
+    .mobile-menu__btn--border {
+        padding: 10px;
+    }
 }
