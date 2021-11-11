@@ -4,3 +4,15 @@ $font-family1: 'Roboto', sans-serif;
 $lightblue: #C5E3E8;
 $lightorange: #F0C59D;
 $black: #000000;
+
+%title-style {
+    font-size: 80px;
+    line-height: 94px;
+    font-weight: 700;
+}
+
+%text-style {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
