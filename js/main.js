@@ -3,9 +3,11 @@
 // Menu-burger
 const body = document.querySelector('body');
 const menuArrows = document.querySelectorAll('.menu__arrow');
-const mobileMenuArrows = document.querySelectorAll('.mobile-menu__arrowmobile-menu__arrow');
+const mobileMenuArrows = document.querySelectorAll('.mobile-menu__arrow');
 const menuListSublist = document.querySelector('.menu__list-item--sublist');
 const menuSublist = document.querySelector('.menu__sublist');
+const burgerIcon = document.querySelector('.menu__burger-icon');
+const mobileMenu = document.querySelector('.mobile-menu');
 
 const isMobile = {
     Android: function() {
@@ -56,3 +58,7 @@ function showSubMenu(selector, className) {
 
 showSubMenu(menuArrows, 'menu__list-item--active');
 showSubMenu(mobileMenuArrows, 'mobile-menu__list-item--active');
+
+burgerIcon.addEventListener('click', () => {
+    mobileMenu.classList.toggle('_visible');
+});

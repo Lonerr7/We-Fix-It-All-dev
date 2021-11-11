@@ -136,6 +136,17 @@ body._touch .menu__list > li.menu__list-item--active .menu__arrow {
     transform: rotate(-180deg);
 }
 
+body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu__sublist {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu__arrow {
+    transform: rotate(-180deg);
+}
+
 // === /header ===
 
 

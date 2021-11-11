@@ -24,17 +24,29 @@ a:hover {
 }
 
 .mobile-menu {
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -500px;
+    transform: translateX(-50%);
+    text-align: center; 
+    padding: 76px 0;
+    background-color: #fff;
+    width: 100%;
+    overflow: auto;
+    transition: left .4s;
 
     &__list-item--sublist {
         position: relative;
         display: flex;
-        // align-items: center;
-        // justify-content: flex-start;
-        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
     }
 
     &__sublist {
-        
+        position: absolute;
+        top: 100%;
         background-color: #fff;
         padding: 41px 26px 29px 31px !important;
         width: 220px;
@@ -45,4 +57,13 @@ a:hover {
         transition: all .4s ease 0s;
         transform: translateY(30px);
     }
+
+    &__arrow {
+        transition: all .3s;
+        margin: 0 0 0 5px;
+    }
+}
+
+._visible {
+    left: 50%;
 }
