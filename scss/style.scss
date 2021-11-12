@@ -117,6 +117,10 @@
     
     &__sublist-link {
         color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__burger-icon {
@@ -627,13 +631,67 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
 
 }
 
-
-
 .arrow--active {
     transform: rotate(180deg);
 }
 
-
 // === /repairs ===
+
+
+// === contact ===
+
+.contact {
+    padding-top: 73px;
+    padding-bottom: 58px;
+    background-color: #F3E7E7;
+
+    &__form {
+        background-color: #fff;
+        max-width: 600px;
+        padding: 37px 25px 29px 25px;
+    }
+
+    &__title {
+        @extend %title-style;
+        margin-bottom: 45px;
+    }
+
+    &__label-box {
+        margin-bottom: 28px;
+        margin-left: 29px;
+    }
+
+    &__label {
+        font-weight: 500;
+    }
+
+    &__input {
+        border: none;
+        border-bottom: 1px solid $black;
+        margin-bottom: 37px;
+        width: 500px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: 500;
+        margin-left: 25px;
+    }
+
+    &__form-btn {
+        color: #fff;
+        background-color: $black;
+        border: none;
+        cursor: pointer;
+        margin: 0 auto;
+        display: block;
+        width: 500px;
+        padding: 16px 0;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// === /contact ===
 
 @import 'media';
