@@ -670,8 +670,7 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
         border-bottom: 1px solid $black;
         margin-bottom: 37px;
         width: 500px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 13px 15px;
         font-weight: 500;
         margin-left: 25px;
     }
@@ -693,5 +692,68 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
 }
 
 // === /contact ===
+
+
+// === footer ===
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #C5E3E8;
+
+    &__title {
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 59px;
+        color: $black;
+        margin-bottom: 32px;
+    }
+
+    &__top {
+        padding-bottom: 100px;
+        border-bottom: 1px solid $black;
+        margin-bottom: 28px;
+    }
+
+    &__top-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__top-contact {
+        max-width: 248px;
+    }
+
+    &__link {
+        color: $black;
+        display: block;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__top-items {
+        display: flex;
+    }
+
+    &__links--1 {
+        margin-right: 95px;
+    }
+
+    &__links--2 {
+        margin-right: 138px;    
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+// === /footer ===
+
 
 @import 'media';
