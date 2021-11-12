@@ -31,6 +31,11 @@
         color: inherit;
         margin-right: 17px;
         font-weight: 500;
+        transition: hover .5s;
+
+        &:hover {
+            text-decoration: underline;
+        }
 
         &:last-child {
             margin-right: 0;
@@ -62,6 +67,7 @@
     &__list-item {
         position: relative;
         margin-right: 15px;
+        transition: all .5s;
 
         &:last-child {
             margin-right: 0;
@@ -71,6 +77,11 @@
     &__list-link {
         color: inherit;
         font-weight: 500;
+        transition: .5s;
+        
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
 
@@ -196,6 +207,10 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
         font-weight: 500;
         line-height: 26px;
         display: inline-block;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__btn-black {
@@ -312,6 +327,58 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
 }
 
 // === /cards ===
+
+
+// === gudget ===
+
+.gudget {
+    padding-top: 50px;
+    padding-bottom: 50px;   
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__item--1 {
+        padding: 100px 0 46px 25px;
+        max-width: 550px;
+    }
+
+    &__title {
+        @extend %title-style;
+        margin-bottom: 60px;
+    }
+
+    &__text {
+        @extend %text-style;
+    }
+
+    &__text--1 {
+        padding-bottom: 25px;
+        border-bottom: 1px solid $black;
+        margin-bottom: 33px;
+    }
+
+    &__subtitle {
+        @extend %text-style;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    &__text--2 {
+        margin-bottom: 40px;
+    }
+
+    &__images {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+// === /gudget ===
 
 
 @import 'media';
