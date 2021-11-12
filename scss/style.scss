@@ -282,14 +282,9 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
     }
 
     &__item-link {
-        position: relative; 
-        font-weight: 500;   
-        font-size: 24px;
-        line-height: 28px;
-        padding-bottom: 8px;
-        color: $black;
+        @extend %link-style;
         flex: 0 0 auto;
-        
+
         &::after {
             content: '';
             position: absolute;
@@ -299,10 +294,11 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
             width: 115px;
             background-color: $black;    
         }
-
+    
         &:hover {
             text-decoration: none;
         }
+        
     }
 
     &__item--darkgreen {
@@ -379,6 +375,92 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
 }
 
 // === /gudget ===
+
+
+// === services ===
+
+.services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__header {
+        background-color: #F0C59D;
+        padding: 40px 0;
+    }
+
+    &__box {
+        padding: 0 13px 0 39px;
+        display: flex;
+        // justify-content: space-between;
+    }
+
+    &__title {
+        @extend %title-style;
+        max-width: 560px;
+        margin-right: 13px;
+    }
+
+    &__text-box {
+        max-width: 554px;
+    }
+
+    &__text {
+        @extend %text-style;
+        margin-bottom: 34px;
+    }
+
+    &__link {
+        @extend %link-style;  
+        border-bottom: 1px solid $black;
+
+        &:hover {
+            text-decoration: none;
+            border-bottom: none;
+        }
+    }
+
+    &__slider {
+        margin-top: 100px;
+        margin-bottom: 100px;   
+    }
+
+    &__picture {
+        border: 50px solid #65C5D2;
+        padding: 62px 23px 62px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__picture-textbox {
+        max-width: 527px;
+    }
+
+    &__picture-title {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 58px;
+        margin-bottom: 67px;
+    }
+
+    &__picture-text {
+        @extend %text-style;
+        margin-bottom: 44px;
+    }
+
+    &__picture-btn {
+        display: inline-block;
+        background-color: $black;
+        color: #fff;
+        padding: 22px 44px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// === /services ===
 
 
 @import 'media';

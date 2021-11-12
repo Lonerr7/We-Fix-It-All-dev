@@ -63,3 +63,12 @@ burgerIcon.addEventListener('click', () => {
     mobileMenu.classList.toggle('_visible');
     body.classList.toggle('lock');
 });
+
+// Slider
+$('.services__slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    prevArrow: false,
+    nextArrow: false,
+});
+
