@@ -444,6 +444,14 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
         align-items: center;
     }
 
+    &__picture-imgbox {
+        margin-right: 30px;
+    }
+
+    &__picture-img {
+        max-width: 500px;
+    }
+
     &__picture-textbox {
         max-width: 527px;
     }

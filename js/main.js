@@ -70,6 +70,14 @@ $('.services__slider').slick({
     slidesToScroll: 1,
     prevArrow: false,
     nextArrow: false,
+    responsive: [
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
 });
 
 // Accordion
