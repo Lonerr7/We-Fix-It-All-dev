@@ -186,6 +186,10 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
         background-color: rgba(241, 178, 158, 0.55);
     }
 
+    &__item-img {
+        max-width: 700px;
+    }
+
     &__info {
         position: absolute;
         top: 64px;
@@ -201,8 +205,7 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
     }
 
     &__text {
-        font-size: 23px;
-        line-height: 27px;
+        @extend %text-style;
         max-width: 540px;
         margin-bottom: 40px;
     }
