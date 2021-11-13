@@ -552,6 +552,10 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
         margin-bottom: 100px;
     }
 
+    &__top-img {
+        margin-right: 30px;
+    }
+
     &__top-textbox {
         margin-right: 27px;
         max-width: 540px;
@@ -605,6 +609,7 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
+        width: 100%;
     }
 
     &__item-btns {
@@ -616,6 +621,7 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
         font-weight: 700;
         font-size: 50px;
         line-height: 58px;
+        margin-right: 30px;
     }
 
     &__item-article {

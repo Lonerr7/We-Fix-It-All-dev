@@ -1,3 +1,10 @@
+@media (max-width: 1216px) {
+    // === repairs ===
+    .repairs__images {
+        display: none;
+    }
+}
+
 @media (max-width: 1133px) {
     // === services ===
     .services__box {
@@ -58,6 +65,25 @@
     .clients__text {
         text-align: center;
         margin: 0 0 66px 0;
+    }
+}
+
+@media (max-width: 1047px) {
+    // === repairs ===
+    .repairs__top {
+        flex-direction: column;
+    }
+
+    .repairs__top-textbox {
+        order: -1;
+        margin-bottom: 50px;
+        max-width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .repairs__top-img{
+        margin-right: 0;
     }
 }
 
@@ -189,6 +215,14 @@
     }
 }
 
+@media (max-width: 869px) {
+    // === repairs ===
+    .accordion__item-title {
+        font-size: 40px;
+        line-height: 45px;
+    }
+}
+
 @media (max-width: 791px) {
     // === cards ===
     .cards__items {
@@ -228,6 +262,37 @@
         font-size: 68px;
         line-height: 71px;
         margin-bottom: 30px;
+    }
+
+    // === reapirs ===
+    .repairs__title {
+        font-size: 68px;
+        line-height: 71px;
+    }
+
+    .repairs__top {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 771px) {
+    // === repairs ===
+    .accordion__item {
+        margin-bottom: 25px;
+    }
+
+    .accordion__item-title {
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .accordion__item-arrow {
+        width: 35px;
+        height: 35px;
+    }
+
+    .accordion__item-article, .accordion__item-number {
+        font-size: 20px;
     }
 }
 
@@ -281,9 +346,15 @@
         width: 85px;
         height: 85px;
     }
+
+    // === repairs ===
+    .repairs {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
 
-@media (max-width: 673px) {
+@media (max-width: 675px) {
     // === gudget ===
     .gudget__title {
         font-size: 61px;
@@ -306,6 +377,17 @@
     .clients__title {
         font-size: 61px;
         line-height: 60px;    
+    }
+
+    // === reapirs ===
+    .repairs__title {
+        font-size: 61px;
+        line-height: 60px;
+    }
+
+    .accordion {
+        margin-right: 0;    
+        margin-left: 0;
     }
 }
 
@@ -408,6 +490,20 @@
         font-size: 21px;
         margin: 0 0 32px 0; 
     }
+
+    // === reapirs ===
+    .repairs__title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .repairs__text {
+        font-size: 21px;    
+    }
+
+    .accordion__item-text {
+        font-size: 21px;
+    }
 }
 
 @media (max-width: 530px) {
@@ -463,6 +559,21 @@
     .clients__img {
         width: 70px;
         height: 70px;
+    }
+
+    // === repairs ===
+    .accordion__item {
+        padding-bottom: 20px;
+    }
+
+    .accordion__item-titlebox {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .accordion__item-title {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 }
 
@@ -537,7 +648,6 @@
         margin-bottom: 25px;    
     }
 
-
     .cards__item-logo {
         margin-bottom: 20px;
         width: 85px;
@@ -598,6 +708,34 @@
             width: 95px;
         }
     }
+
+    // === reapirs ===
+    .repairs__title {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .repairs__link {
+        font-size: 22px;
+    }
+
+    .repairs__top {
+        margin-bottom: 35px;
+    }
+
+    .repairs__top-textbox {
+        margin-bottom: 38px;
+    }
+
+    .accordion__item-title {
+        font-size: 30px;    
+        margin-bottom: 6px;
+    }
+
+    .accordion__item-arrow {
+        width: 30px;
+        height: 29px;
+    }
 }
 
 @media (max-width: 410px) {
@@ -624,6 +762,14 @@
     .clients__img {
         width: 60px;
         height: 60px;
+    }
+}
+
+@media (max-width: 400px) {
+    // === repairs ===
+    .repairs__title {
+        font-size: 40px;
+        line-height: 45px;
     }
 }
 
@@ -715,6 +861,12 @@
     .clients__img {
         width: 50px;
         height: 50px;
+    }
+
+    // === repairs ===
+    .repairs__title {
+        font-size: 34px;
+        line-height: 40px;
     }
 }
 
