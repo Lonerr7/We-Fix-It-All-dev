@@ -98,6 +98,20 @@ if (accordionHeadings.length > 0) {
             }
         });
         
-    })
-    
+    }) 
 }
+
+// Scroll top btn
+function goToTop() {
+    const btnTop = $('.go-to-top');
+
+    $(window).on('scroll', () => {
+        if ($(this).scrollTop() >= 100) {
+            btnTop.fadeIn();
+        } else {
+            btnTop.fadeOut();
+        }  
+    });
+}
+
+goToTop();

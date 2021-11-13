@@ -109,3 +109,46 @@ body {
     left: 50%;
 }
 
+.go-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+    // border: 1px solid red;
+    border-radius: 50%;
+    background-color: #fff;
+    display: none;
+    outline: 2px solid black;
+
+    &:hover,
+    &:focus {
+        filter: brightness(1.5);
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &::before {
+        width: 5px; 
+        height: 25px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        background-color: $black;
+    }
+
+    &::after {
+        top: 21px;
+        width: 15px;
+        height: 15px;
+        transform: translate(-50%, -50%) rotate(45deg);
+        border-top: 5px solid $black;
+        border-left: 5px solid $black;
+    }
+}

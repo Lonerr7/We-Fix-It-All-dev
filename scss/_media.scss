@@ -859,6 +859,16 @@
     .footer__title {
         font-size: 40px;
     }
+
+    // btn top
+    .go-to-top {
+        width: 45px;
+        height: 45px;
+
+        &::after {
+            top: 19px;
+        }
+    }
 }
 
 @media (max-width: 410px) {
