@@ -347,6 +347,7 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
     &__item--1 {
         padding: 100px 0 46px 25px;
         max-width: 550px;
+        margin-right: 20px;
     }
 
     &__title {
@@ -378,6 +379,10 @@ body._touch .mobile-menu__list > li.mobile-menu__list-item--active .mobile-menu_
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &__item-img {
+        max-width: 600px;
     }
 }
 
